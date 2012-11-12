@@ -1,0 +1,12 @@
+{
+	"slides":[
+		{
+			"title":"Slide 1",
+			"url":"slides/slide1.html"
+		},
+		{
+			"title":"Slide 2",
+			"url":"slides/slide2.html"
+		}
+	]
+}
