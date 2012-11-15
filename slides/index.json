@@ -1,18 +1,26 @@
 {
 	"slides":[
 		{
-			"title":"Slide 0",
+			"title":"Yassal Sundman",
 			"selector":"#content"
 		},
 		{
-			"title":"Slide 1",
+			"title":"About",
 			"url":"slides/slide1.html"
 		},
 		{
-			"title":"Slide 2",
+			"title":"Focus on Mobile",
 			"url":"slides/slide2.html"
+		},
+		{
+			"title":"Importance of Mobile",
+			"url":"slides/slide3.html"
+		},
+		{
+			"title":"Context",
+			"url":"slides/slide4.html"
 		}
 	],
 	"linkTemplate":"<a id='{{>id}}' href='#'>{{>label}}</a>",
-	"titleTemplate":"This is the title for slide: {{>title}}"
+	"titleTemplate":"Mobile First Responsive Design - {{>title}}"
 }
