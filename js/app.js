@@ -12,7 +12,7 @@
 
 	require(['nav'], function(nav) {
 		nav.initialize(function() {
-			nav.navigate(0);
+			// nav.navigate(0);
 		});
 	});
 }());
