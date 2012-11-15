@@ -28,15 +28,19 @@
 				var markup = $.render.linkTemplate({id:id, label:label});
 				$('body').append(markup);
 			},
-			createNavMarkup = function(tmplStr) {
-				$.templates({'linkTemplate':tmplStr});
+			createNavMarkup = function() {
 				createNavLink(leftNavId, 'Left');
 				createNavLink(rightNavId, 'Right');
 			},
+			parseTemplates = function(data) {
+				$.templates({'linkTemplate':data.linkTemplate,
+							'titleTemplate':data.titleTemplate});
+			},
 			loadNavMetaData = function(cb) {
 				$.getJSON('slides/index.json', function(data) {
+					parseTemplates(data);
 					createIndex(data.slides);
-					createNavMarkup(data.linkTemplate);
+					createNavMarkup();
 					cb();
 				});
 			},

@@ -7,18 +7,19 @@
 	define(['jquery'], function($) {
 		var Index = function(data) {
 			this.title = data.title;
+			this.templatedTitle = $.render.titleTemplate({title:this.title});
 			this.url = data.url;
 		};
 		Index.prototype.toString = function() {
 			return 'Index(' + this.title + ', ' + this.url + ')';
 		};
 		Index.prototype.load = function(sel) {
-			var that = this;
+			var that = this, title = $('head title');
 			console.log('load: ' + this.toString());
-			$('head title').text('Loading ' + this.title + '...');
+			title.text('Loading ' + this.title + '...');
 			$.get(this.url, function(data) {
 				$(sel).html(data);
-				$('head title').text(that.title);
+				title.text(that.templatedTitle);
 			});
 		};
 		return Index;
