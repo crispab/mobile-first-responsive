@@ -8,5 +8,6 @@
 			"title":"Slide 2",
 			"url":"slides/slide2.html"
 		}
-	]
+	],
+	"linkTemplate":"<a id='{{>id}}' href='#'>{{>label}}</a>"
 }

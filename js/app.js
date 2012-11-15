@@ -6,7 +6,8 @@
 
 	require.config({
 		paths:{
-			jquery:'lib/jquery'
+			jquery:'lib/jquery',
+			jsrender:'lib/jsrender'
 		}
 	});
 
