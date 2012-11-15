@@ -1,6 +1,10 @@
 {
 	"slides":[
 		{
+			"title":"Slide 0",
+			"selector":"#content"
+		},
+		{
 			"title":"Slide 1",
 			"url":"slides/slide1.html"
 		},
