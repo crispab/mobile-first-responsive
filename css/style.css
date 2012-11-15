@@ -31,3 +31,7 @@ footer,header,hgroup,menu,nav,section {
 nav ul {
 	list-style:none;
 }
+
+img {
+	max-width: 100%;
+}
