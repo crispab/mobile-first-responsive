@@ -19,6 +19,10 @@
 		{
 			"title":"Context",
 			"url":"slides/slide4.html"
+		},
+		{
+			"title":"Alternate Context",
+			"url":"slides/slide5.html"
 		}
 	],
 	"linkTemplate":"<a id='{{>id}}' href='#'>{{>label}}</a>",
