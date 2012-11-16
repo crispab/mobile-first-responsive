@@ -4,7 +4,7 @@
 
 	"use strict";
 
-	define(['index', 'jquery', 'jsrender'], function(Index, $) {
+	define(['index', 'jquery', 'jsrender', 'jquery-mobile'], function(Index, $) {
 
 		var contentSel = "#content",
 			leftNavId = "nav-left",
@@ -44,15 +44,32 @@
 					cb();
 				});
 			},
+			nextPage = function() {
+				return currentIndex < indices.length - 1 ? currentIndex + 1 : 0;
+			},
+			prevPage = function() {
+				return currentIndex > 0 ? currentIndex - 1 : indices.length - 1;
+			},
 			setUpNavigation = function() {
 				$(leftSel).on('click', function(e) {
 					e.preventDefault();
-					navigate(currentIndex > 0 ? currentIndex - 1 : indices.length - 1);
+					navigate(prevPage());
 				});
 				$(rightSel).on('click', function(e) {
 					e.preventDefault();
-					navigate(currentIndex < indices.length - 1 ? currentIndex + 1 : 0);
+					navigate(nextPage());
 				});
+				$(document).on('swipeleft', function(e) {
+					e.preventDefault();
+					navigate(prevPage());
+				});
+				$(document).on('swiperight', function(e) {
+					e.preventDefault();
+					navigate(nextPage());
+				});
+				console.log('$.swipe: ' + $.swipe);
+				console.log('$(document).swipe: ' + $(document).swipe);
+				console.log('$.mobile: ' + JSON.stringify($.mobile));
 			},
 			initialize = function(cb) {
 				loadNavMetaData(function() {
