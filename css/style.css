@@ -37,6 +37,10 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	font-family: arial, sans-serif;
+	background: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
 }
 
 #slide {
@@ -65,10 +69,6 @@ h2 {
 
 .slideText {
 	font-size: 1em;
-	background: url('../images/background.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center top;
 }
 
 footer {
@@ -77,13 +77,17 @@ footer {
 }
 
 @media screen and (min-width: 360px) {
-	.slideText {
+	body {
 		background-size: 320px;
 	}
 
 }
 
 @media screen and (min-width: 769px) {
+	body {
+		background: none;
+	}
+
 	#slide {
 		width: 98.18032787%;
 		float: left;
@@ -91,6 +95,10 @@ footer {
 	}
 
 	.slideText {
+		background: url('../images/background.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center top;
 		background-size: 100%;
 		width: 32.786885%;
 		float: left;
