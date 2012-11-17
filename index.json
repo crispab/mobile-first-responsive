@@ -52,6 +52,6 @@
 		}
 	],
 	"linkTemplate":"<a id='{{:id}}' href='#'>{{>label}}</a>",
-	"titleTemplate":"Mobile First Responsive Design - {{>title}}",
+	"titleTemplate":"{{>title}}",
 	"slideTemplate":"<div class='slideText'><h2>{{>title}}</h2><p>{{:text}}</p></div><p class='slideImage'><img src='images/{{:img}}'/></p>"
 }
