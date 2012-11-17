@@ -58,16 +58,20 @@
 					navigate(nextPage());
 				});
 			},
-			loadNavMetaData = function() {
+			loadNavMetaData = function(slide) {
 				$.getJSON('index.json', function(data) {
 					parseTemplates(data);
 					createIndex(data.slides);
 					createNavMarkup();
 					setUpNavigation();
+					if (slide) {
+						navigate(slide);
+					}
+					$('#slide').show();
 				});
 			},
-			initialize = function() {
-				loadNavMetaData();
+			initialize = function(slide) {
+				loadNavMetaData(slide);
 			};
 
 

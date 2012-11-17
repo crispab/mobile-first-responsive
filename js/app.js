@@ -2,7 +2,7 @@
 
 (function() {
 
-	"use strict";
+	// "use strict";
 
 	require.config({
 		paths:{
@@ -12,8 +12,9 @@
 		}
 	});
 
-	require(['viewportfix', 'nav', 'jquery', 'jquery-mobile'], function(vpf, nav, $) {
-		vpf(document);
-		nav.initialize();
+	require(['utils', 'nav', 'jquery', 'jquery-mobile'], function(utils, nav, $) {
+		$('#slide').hide();
+		utils.fixViewport(document);
+		nav.initialize(utils.getURLParameter('s'));
 	});
 }());
