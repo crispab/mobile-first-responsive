@@ -21,7 +21,7 @@
 		};
 		Index.prototype.render = function(sel) {
 			$(sel).html(this.html);
-			$('head title').text(this.templatedTitle);
+			$('head title').text(this.title);
 		};
 		return Index;
 	});
