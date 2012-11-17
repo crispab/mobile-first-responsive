@@ -25,11 +25,11 @@
 			},
 			createNavLink = function(id, label) {
 				var markup = $.render.linkTemplate({id:id, label:label});
-				$('body').append(markup);
+				$(contentSel).after(markup);
 			},
 			createNavMarkup = function() {
-				createNavLink(leftNavId, 'Left');
-				createNavLink(rightNavId, 'Right');
+				createNavLink(rightNavId, 'Next');
+				createNavLink(leftNavId, 'Previous');
 			},
 			parseTemplates = function(data) {
 				$.templates({'linkTemplate':data.linkTemplate, 'titleTemplate':data.titleTemplate});
