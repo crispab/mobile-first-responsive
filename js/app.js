@@ -12,7 +12,8 @@
 		}
 	});
 
-	require(['nav', 'jquery', 'jquery-mobile'], function(nav, $) {
+	require(['viewportfix', 'nav', 'jquery', 'jquery-mobile'], function(vpf, nav, $) {
+		vpf(document);
 		nav.initialize(function() {
 			// nav.navigate(0);
 		});
