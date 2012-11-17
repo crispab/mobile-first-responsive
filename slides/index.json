@@ -5,10 +5,6 @@
 			"selector":"#content"
 		},
 		{
-			"title":"About",
-			"url":"slides/slide1.html"
-		},
-		{
 			"title":"Focus on Mobile",
 			"url":"slides/slide2.html"
 		},
@@ -17,8 +13,24 @@
 			"url":"slides/slide3.html"
 		},
 		{
-			"title":"Importance of Mobile",
+			"title":"Native or not",
 			"url":"slides/slide3-a.html"
+		},
+		{
+			"title":"Native",
+			"url":"slides/slide3-b.html"
+		},
+		{
+			"title":"Or Not",
+			"url":"slides/slide3-c.html"
+		},
+		{
+			"title":"Not Another Debate",
+			"url":"slides/slide3-d.html"
+		},
+		{
+			"title":"Jakob Nielsen",
+			"url":"slides/slide4-a.html"
 		},
 		{
 			"title":"Context",
