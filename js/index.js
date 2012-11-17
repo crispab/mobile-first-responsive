@@ -1,8 +1,8 @@
-/*global define:true, console:true*/
+/*global define:true*/
 
 (function() {
 
-	"use strict";
+	// "use strict";
 
 	define(['jquery'], function($) {
 		var Index = function(data) {
@@ -10,28 +10,25 @@
 			this.templatedTitle = $.render.titleTemplate({title:this.title});
 			this.url = data.url;
 			if (data.selector) {
-				this.text = $(data.selector).text();
+				this.html = $(data.selector).html();
 			}
 		};
 		Index.prototype._renderSlide = function(sel, data) {
-			console.log('markup: ' + data);
 			$(sel).html(data);
 			$('head title').text(this.templatedTitle);
 		};
 		Index.prototype.toString = function() {
-			return 'Index(' + this.title + ', ' + this.url + ', ' + this.selector +')';
+			return 'Index(' + this.title + ', ' + this.url + ')';
 		};
 		Index.prototype.load = function(sel) {
 			var that = this;
-			console.log('load: ' + this.toString());
 			$('head title').text('Loading ' + this.title + '...');
-			if (this.text) {
-				console.log('markup: ' + this.text);
-				this._renderSlide(sel, this.text);
+			if (this.html) {
+				this._renderSlide(sel, this.html);
 			} else {
 				$.get(this.url, function(data) {
 					that._renderSlide(sel, data);
-					that.text = data;
+					that.html = data;
 				});
 			}
 		};

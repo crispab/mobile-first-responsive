@@ -1,4 +1,4 @@
-/*global define:true, console:true*/
+/*global define:true*/
 
 (function() {
 

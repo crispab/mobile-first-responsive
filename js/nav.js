@@ -21,7 +21,6 @@
 			createIndex = function(slides) {
 				$.each(slides, function(key, val) {
 					indices.push(new Index(val));
-					console.log('indices: ' + indices);
 				});
 			},
 			createNavLink = function(id, label) {
@@ -33,8 +32,7 @@
 				createNavLink(rightNavId, 'Right');
 			},
 			parseTemplates = function(data) {
-				$.templates({'linkTemplate':data.linkTemplate,
-							'titleTemplate':data.titleTemplate});
+				$.templates({'linkTemplate':data.linkTemplate, 'titleTemplate':data.titleTemplate});
 			},
 			loadNavMetaData = function(cb) {
 				$.getJSON('slides/index.json', function(data) {
@@ -67,9 +65,6 @@
 					e.preventDefault();
 					navigate(nextPage());
 				});
-				console.log('$.swipe: ' + $.swipe);
-				console.log('$(document).swipe: ' + $(document).swipe);
-				console.log('$.mobile: ' + JSON.stringify($.mobile));
 			},
 			initialize = function(cb) {
 				loadNavMetaData(function() {
