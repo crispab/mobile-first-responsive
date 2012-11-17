@@ -59,7 +59,7 @@
 				});
 			},
 			loadNavMetaData = function() {
-				$.getJSON('slides/index.json', function(data) {
+				$.getJSON('index.json', function(data) {
 					parseTemplates(data);
 					createIndex(data.slides);
 					createNavMarkup();
