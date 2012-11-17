@@ -6,7 +6,7 @@
 
 	define(['index', 'jquery', 'jsrender', 'jquery-mobile'], function(Index, $) {
 
-		var contentSel = "#content",
+		var contentSel = "#slide",
 			leftNavId = "nav-left",
 			leftSel = "#" + leftNavId,
 			rightNavId = "nav-right",
@@ -16,7 +16,7 @@
 			navigate = function(index) {
 				console.log('indices: ' + indices);
 				currentIndex = index;
-				indices[currentIndex].load(contentSel);
+				indices[currentIndex].render(contentSel);
 			},
 			createIndex = function(slides) {
 				$.each(slides, function(key, val) {
@@ -32,15 +32,7 @@
 				createNavLink(leftNavId, 'Previous');
 			},
 			parseTemplates = function(data) {
-				$.templates({'linkTemplate':data.linkTemplate, 'titleTemplate':data.titleTemplate});
-			},
-			loadNavMetaData = function(cb) {
-				$.getJSON('slides/index.json', function(data) {
-					parseTemplates(data);
-					createIndex(data.slides);
-					createNavMarkup();
-					cb();
-				});
+				$.templates({linkTemplate:data.linkTemplate, titleTemplate:data.titleTemplate, slideTemplate:data.slideTemplate});
 			},
 			nextPage = function() {
 				return currentIndex < indices.length - 1 ? currentIndex + 1 : 0;
@@ -66,11 +58,16 @@
 					navigate(nextPage());
 				});
 			},
-			initialize = function(cb) {
-				loadNavMetaData(function() {
+			loadNavMetaData = function() {
+				$.getJSON('slides/index.json', function(data) {
+					parseTemplates(data);
+					createIndex(data.slides);
+					createNavMarkup();
 					setUpNavigation();
-					cb();
 				});
+			},
+			initialize = function() {
+				loadNavMetaData();
 			};
 
 

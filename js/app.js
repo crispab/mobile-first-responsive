@@ -14,8 +14,6 @@
 
 	require(['viewportfix', 'nav', 'jquery', 'jquery-mobile'], function(vpf, nav, $) {
 		vpf(document);
-		nav.initialize(function() {
-			// nav.navigate(0);
-		});
+		nav.initialize();
 	});
 }());

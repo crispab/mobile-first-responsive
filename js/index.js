@@ -2,35 +2,26 @@
 
 (function() {
 
-	// "use strict";
+	"use strict";
 
 	define(['jquery'], function($) {
 		var Index = function(data) {
-			this.title = data.title;
-			this.templatedTitle = $.render.titleTemplate({title:this.title});
-			this.url = data.url;
+			var title;
 			if (data.selector) {
 				this.html = $(data.selector).html();
+				title = $(data.titleSelector).html();
+				this.title = $.render.titleTemplate({title:title});
+			} else {
+				this.html = $.render.slideTemplate(data);
+				this.title = $.render.titleTemplate({title:data.title});
 			}
-		};
-		Index.prototype._renderSlide = function(sel, data) {
-			$(sel).html(data);
-			$('head title').text(this.templatedTitle);
 		};
 		Index.prototype.toString = function() {
-			return 'Index(' + this.title + ', ' + this.url + ')';
+			return 'Index(' + this.title + ')';
 		};
-		Index.prototype.load = function(sel) {
-			var that = this;
-			$('head title').text('Loading ' + this.title + '...');
-			if (this.html) {
-				this._renderSlide(sel, this.html);
-			} else {
-				$.get(this.url, function(data) {
-					that._renderSlide(sel, data);
-					that.html = data;
-				});
-			}
+		Index.prototype.render = function(sel) {
+			$(sel).html(this.html);
+			$('head title').text(this.templatedTitle);
 		};
 		return Index;
 	});

@@ -1,46 +1,57 @@
 {
 	"slides":[
 		{
-			"title":"Yassal Sundman",
-			"selector":"#content"
+			"selector":"#slide",
+			"titleSelector":"#slide h2",
+			"img":"intro.png"
 		},
 		{
-			"title":"Focus on Mobile",
-			"url":"slides/slide2.html"
+			"title":"Why the Big Fuss About Mobile",
+			"img":"cellphones-everywhere.png",
+			"text":"Fast growing market, lots of users. In developing countries the trend is that mobile usage is outpacing computer usage."
 		},
 		{
-			"title":"Importance of Mobile",
-			"url":"slides/slide3.html"
+			"title":"Why is this important?",
+			"img":"cool-website.png",
+			"text":"You lose out on your market without a mobile presence. Most people can access your site as it is on mobile. The experience should be good. So should you go native with an app, or just use a website."
 		},
 		{
 			"title":"Native or not",
-			"url":"slides/slide3-a.html"
+			"img":"native-never.png",
+			"text":"There are a lot of strong feelings around this question. When Java came we got a platform agnostic language: write once, run everywhere. Apps are introducing old restrictions to software. Write for a specific OS, tap into all the OS specific apis, do more with the app! These arguments run along very technical lines. What does the user need?"
 		},
 		{
-			"title":"Native",
-			"url":"slides/slide3-b.html"
+			"title":"Sometimes Native is What You Need",
+			"img":"native.png",
+			"text":"What if you want to use the camera? Scan in labels, upload images? Integrating with the phone via an app gives you access to the phone's features. This is not possible today with a website."
 		},
 		{
-			"title":"Or Not",
-			"url":"slides/slide3-c.html"
+			"title":"Sometimes a Website is Better Suited",
+			"img":"newssite.png",
+			"text":"What about a blog? Or a news site? Or a site that doesn't need to interact with the OS? Do they really need an app? What about people who are browsing the web on their phones. What should they see when they come to your site?"
 		},
 		{
-			"title":"Not Another Debate",
-			"url":"slides/slide3-d.html"
+			"title":"Yet Another Debate",
+			"img":"2sites-2designs.png",
+			"text":"So how should I display my website then? Should I have one website that both mobile and desktop users see, or should I have two disparate websites, tailored to their device?"
 		},
 		{
 			"title":"Jakob Nielsen",
-			"url":"slides/slide4-a.html"
+			"img":"jakob-nielsen.png",
+			"text":"Jakob Nielson is <em>the</em> authority on usable web design. He's written numerous books about web design, and was one of the first to advocate so strongly for user driven design. To oversimplify, Jakob Nielsen suggests that users on mobile devices just don't have the time or the attention span for a lot of data. So give them minimal features and minimal data."
 		},
 		{
-			"title":"Context",
-			"url":"slides/slide4.html"
+			"title":"Is this the Mobile Context?",
+			"img":"on-the-move.png",
+			"text":"But is it true? Are we always rushing somewhere when we're using our mobile devices? Are we really only looking for a short, easily read, site?"
 		},
 		{
-			"title":"Alternate Context",
-			"url":"slides/slide5.html"
+			"title":"Rethink Context",
+			"img":"couch-potato.png",
+			"text":""
 		}
 	],
-	"linkTemplate":"<a id='{{>id}}' href='#'>{{>label}}</a>",
-	"titleTemplate":"Mobile First Responsive Design - {{>title}}"
+	"linkTemplate":"<a id='{{:id}}' href='#'>{{>label}}</a>",
+	"titleTemplate":"Mobile First Responsive Design - {{>title}}",
+	"slideTemplate":"<h2>{{>title}}</h2><p><img src='images/{{:img}}'/></p><p>{{>text}}</p>"
 }
