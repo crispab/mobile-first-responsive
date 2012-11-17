@@ -19,10 +19,6 @@ time, mark, audio, video {
 	background:transparent;
 }
 
-body {
-	line-height:1;
-}
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
 	display:block;
@@ -34,4 +30,94 @@ nav ul {
 
 img {
 	max-width: 100%;
+	display: block;
 }
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: arial, sans-serif;
+}
+
+#slide {
+	padding: 10px;
+}
+
+h1 {
+	font-size: .8em;
+	text-align: center;
+	padding: .81967213%;
+}
+
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.slideImage, .slideText {
+	width: 93.75%;
+	margin: 0 auto;
+}
+
+.slideText p {
+	padding: 2.45901639%;
+}
+
+.slideText {
+	font-size: 1em;
+	background: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+}
+
+footer {
+	font-size: .8em;
+	text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+	.slideText {
+		background-size: 320px;
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+	#slide {
+		width: 98.18032787%;
+		float: left;
+		padding: .81967213%;
+	}
+
+	.slideText {
+		background-size: 100%;
+		width: 32.786885%;
+		float: left;
+	}
+	
+	.slideText p {
+		padding: 2.45901639%;
+	}
+
+	.slideImage {
+		width: 65.57377%;
+		float: right;
+	}
+
+	h1, footer {
+		text-align: left;
+		padding: .81967213%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	body {
+		max-width: 1220px;
+	}
+	.slideText {
+		background-size: 320px;
+	}
+
+}
+
