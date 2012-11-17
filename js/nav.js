@@ -15,7 +15,7 @@
 			currentIndex = 0,
 			navigate = function(index) {
 				console.log('indices: ' + indices);
-				currentIndex = index;
+				currentIndex = Number(index);
 				indices[currentIndex].render(contentSel);
 			},
 			createIndex = function(slides) {
