@@ -51,11 +51,11 @@
 				});
 				$(document).on('swipeleft', function(e) {
 					e.preventDefault();
-					navigate(prevPage());
+					navigate(nextPage());
 				});
 				$(document).on('swiperight', function(e) {
 					e.preventDefault();
-					navigate(nextPage());
+					navigate(prevPage());
 				});
 			},
 			loadNavMetaData = function(slide) {
@@ -67,7 +67,6 @@
 					if (slide) {
 						navigate(slide);
 					}
-					$('#slide').show();
 				});
 			},
 			initialize = function(slide) {

@@ -13,7 +13,6 @@
 	});
 
 	require(['utils', 'nav', 'jquery', 'jquery-mobile'], function(utils, nav, $) {
-		$('#slide').hide();
 		utils.fixViewport(document);
 		nav.initialize(utils.getURLParameter('s'));
 	});
