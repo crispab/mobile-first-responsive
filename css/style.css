@@ -37,10 +37,37 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	font-family: arial, sans-serif;
-	background: url('../images/background.png');
-	background-repeat: no-repeat;
+	background: url('../images/background.png') no-repeat center top;
 	background-size: 100%;
-	background-position: center top;
+}
+
+#nav-right {
+	background: url("../images/right-arrow.png") no-repeat 100% 40%;
+	background-size: 70%;
+
+	right: 0px;
+	margin-top: -20px;
+	position: absolute;
+	top: 10%;
+	height: 90%;
+}
+
+#nav-left {
+	background: url("../images/left-arrow.png") no-repeat 0% 40%;
+	background-size: 0%;
+	left: 0px;
+	margin-top: -20px;
+	position: absolute;
+	top: 10%;
+	height: 90%;
+}
+a {
+	display: block;
+	width: 30%;
+}
+
+span {
+	display: none;
 }
 
 #slide {
@@ -110,6 +137,7 @@ footer {
 
 	.slideImage {
 		width: 65.57377%;
+		height: 49.1803275%;
 		float: right;
 	}
 
