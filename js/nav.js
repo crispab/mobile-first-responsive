@@ -54,6 +54,14 @@
 				$(nextSel).on('click', next);
 				$(document).on('swipeleft', next);
 				$(document).on('swiperight', prev);
+				$(document).on('keyup', function(e) {
+					if (e.keyCode === 37) {
+						prev(e);
+					} else if (e.keyCode === 39) {
+						next(e);
+					}
+					e.preventDefault();
+				});
 			},
 			loadNavMetaData = function(slide) {
 				parseTemplates(indexData);
