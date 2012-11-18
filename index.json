@@ -51,7 +51,7 @@
 			"text":""
 		}
 	],
-	"linkTemplate":"<a id='{{:id}}' href='#' alt='{{:label}}'><span>{{>label}}</span></a>",
-	"titleTemplate":"{{>title}}",
-	"slideTemplate":"<div class='slideText'><h2>{{>title}}</h2><p>{{:text}}</p></div><p class='slideImage'><img src='images/{{:img}}'/></p>"
+	"linkTemplate":"<a id='<%=id%>' href='#' alt='<%=label%>'><span><%-label%></span></a>",
+	"titleTemplate":"<%-title%>",
+	"slideTemplate":"<div class='slideText'><h2><%-title%></h2><p><%-text%></p></div><p class='slideImage'><img src='images/<%=img%>'/></p>"
 }

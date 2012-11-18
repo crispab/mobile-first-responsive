@@ -4,14 +4,14 @@
 
 	"use strict";
 
-	define(['index', 'jquery', 'text!../index.json', 'jsrender', 'jquery-mobile'], function(Index, $, indexDataStr) {
-
+	define(['index', 'jquery', 'underscore', 'text!../index.json', 'jquery-mobile'], function(Index, $, _, indexDataStr) {
 		var contentSel = "#slide",
 			prevNavId = "nav-prev",
 			prevSel = "#" + prevNavId,
 			nextNavId = "nav-next",
 			nextSel = "#" + nextNavId,
 			indexData = $.parseJSON(indexDataStr),
+			templates = {},
 			indices = [],
 			currentIndex = 0,
 			navigate = function(index) {
@@ -20,11 +20,11 @@
 			},
 			createIndex = function(slides) {
 				$.each(slides, function(key, val) {
-					indices.push(new Index(val));
+					indices.push(new Index(val, templates));
 				});
 			},
 			createNavLink = function(id, label) {
-				var markup = $.render.linkTemplate({id:id, label:label});
+				var markup = templates.linkTemplate({id:id, label:label});
 				$(contentSel).after(markup);
 			},
 			createNavMarkup = function() {
@@ -32,7 +32,9 @@
 				createNavLink(prevNavId, 'Previous');
 			},
 			parseTemplates = function(data) {
-				$.templates({linkTemplate:data.linkTemplate, titleTemplate:data.titleTemplate, slideTemplate:data.slideTemplate});
+				templates.linkTemplate = _.template(data.linkTemplate);
+				templates.titleTemplate = _.template(data.titleTemplate);
+				templates.slideTemplate = _.template(data.slideTemplate);
 			},
 			nextPage = function() {
 				return currentIndex < indices.length - 1 ? currentIndex + 1 : 0;

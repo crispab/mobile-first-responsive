@@ -5,15 +5,15 @@
 	"use strict";
 
 	define(['jquery'], function($) {
-		var Index = function(data) {
+		var Index = function(data, templates) {
 			var title;
 			if (data.selector) {
 				this.html = $(data.selector).html();
 				title = $(data.titleSelector).html();
-				this.title = $.render.titleTemplate({title:title});
+				this.title = templates.titleTemplate({title:title});
 			} else {
-				this.html = $.render.slideTemplate(data);
-				this.title = $.render.titleTemplate({title:data.title});
+				this.html = templates.slideTemplate(data);
+				this.title = templates.titleTemplate({title:data.title});
 			}
 		};
 		Index.prototype.toString = function() {
