@@ -6,15 +6,17 @@
 
 	require.config({
 		paths:{
+			'underscore':'lib/lodash.min',
 			'jquery':'lib/jquery',
 			'jquery-mobile':'lib/jquery.mobile.custom',
-			'jsrender':'lib/jsrender',
 			'text':'lib/text'
 		}
 	});
 
-	require(['utils', 'nav', 'jquery', 'jquery-mobile'], function(utils, nav, $) {
-		utils.fixViewport(document);
-		nav.initialize(utils.getURLParameter('s'));
+	require(['utils', 'nav', 'jquery'], function(utils, nav, $) {
+		$(function() {
+			utils.fixViewport(document);
+			nav.initialize(utils.getURLParameter('s'));
+		});
 	});
 }());

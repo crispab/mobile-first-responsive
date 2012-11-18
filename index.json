@@ -56,7 +56,7 @@
 			"text":"Web usage shows that we are wrong about mobile context. Usage of mobile devices is not limited to when we are on the move. Mobile phones used in front of the TV. Tablets to read in bed. Usage of these devices peaks when we're at home in the evenings."
 		}
 	],
-	"linkTemplate":"<a id='{{:id}}' href='#' alt='{{:label}}'><span>{{>label}}</span></a>",
-	"titleTemplate":"{{>title}}",
-	"slideTemplate":"<div class='slideText'><h2>{{>title}}</h2><p>{{:text}}</p></div><p class='slideImage'><img src='images/{{:img}}'/></p>"
+	"linkTemplate":"<a id='<%=id%>' href='#' alt='<%=label%>'><span><%-label%></span></a>",
+	"titleTemplate":"<%-title%>",
+	"slideTemplate":"<div class='slideText'><h2><%-title%></h2><p><%=text%></p></div><p class='slideImage'><img src='images/<%=img%>'/></p>"
 }
