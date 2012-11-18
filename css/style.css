@@ -130,17 +130,16 @@ footer {
 	}
 
 	#slide {
+		background: url('../images/background.png');
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 32.786885%;
 		width: 98.18032787%;
 		float: left;
 		padding: .81967213%;
 	}
 
 	.slideText {
-		background: url('../images/background.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: center top;
-		background-size: 100%;
 		width: 32.786885%;
 		float: left;
 	}
