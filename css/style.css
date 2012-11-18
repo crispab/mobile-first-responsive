@@ -41,10 +41,9 @@ body {
 	background-size: 100%;
 }
 
-#nav-right {
+#nav-next {
 	background: url("../images/right-arrow.png") no-repeat 100% 40%;
 	background-size: 70%;
-
 	right: 0px;
 	margin-top: -20px;
 	position: absolute;
@@ -52,7 +51,7 @@ body {
 	height: 90%;
 }
 
-#nav-left {
+#nav-prev {
 	background: url("../images/left-arrow.png") no-repeat 0% 40%;
 	background-size: 0%;
 	left: 0px;
@@ -61,6 +60,7 @@ body {
 	top: 10%;
 	height: 90%;
 }
+
 a {
 	display: block;
 	width: 30%;
