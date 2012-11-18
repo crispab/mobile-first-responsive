@@ -39,24 +39,31 @@ body {
 	font-family: arial, sans-serif;
 	background: url('../images/background.png') no-repeat center top;
 	background-size: 100%;
+	position: relative;
 }
 
 #nav-next {
-	background: url("../images/right-arrow.png") no-repeat 100% 40%;
-	background-size: 70%;
-	right: 0px;
+	background: url("../images/right-arrow.png") no-repeat right 40%;
+	background-size: 10%;
+	-moz-transition: background-size .5s ease-in;
+	-web-kit-transition: background-size .5s ease-in;
+	transition: background-size .5s ease-in;
 	margin-top: -20px;
+	right: 0px;
 	position: absolute;
 	top: 10%;
 	height: 90%;
 }
 
 #nav-prev {
-	background: url("../images/left-arrow.png") no-repeat 0% 40%;
-	background-size: 0%;
-	left: 0px;
+	background: url("../images/left-arrow.png") no-repeat left 40%;
+	background-size: 10%;
+	-moz-transition: background-size .5s ease-in;
+	-web-kit-transition: background-size .5s ease-in;
+	transition: background-size .5s ease-in;
 	margin-top: -20px;
 	position: absolute;
+	left: 0px;
 	top: 10%;
 	height: 90%;
 }
@@ -64,6 +71,13 @@ body {
 a {
 	display: block;
 	width: 30%;
+}
+
+#nav-prev:hover, #nav-next:hover {
+	background-size: 15%;
+	-moz-transition: background-size .2s ease-in;
+	-web-kit-transition: background-size .2s ease-in;
+	transition: background-size .2s ease-in;
 }
 
 span {
@@ -151,9 +165,9 @@ footer {
 	body {
 		max-width: 1220px;
 	}
+
 	.slideText {
 		background-size: 320px;
 	}
-
 }
 
