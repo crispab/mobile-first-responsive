@@ -43,29 +43,29 @@ body {
 }
 
 #nav-next {
-	background: url("../images/right-arrow.png") no-repeat right 40%;
+	background: url("../images/right-arrow.png") no-repeat right 60px;
 	background-size: 10%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
 	margin-top: -20px;
-	right: 0px;
+	right: 0;
 	position: absolute;
-	top: 10%;
-	height: 90%;
+	top: 0;
+	height: 100%;
 }
 
 #nav-prev {
-	background: url("../images/left-arrow.png") no-repeat left 40%;
+	background: url("../images/left-arrow.png") no-repeat left 60px;
 	background-size: 10%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
 	margin-top: -20px;
 	position: absolute;
-	left: 0px;
-	top: 10%;
-	height: 90%;
+	left: 0;
+	top: 0;
+	height: 100%;
 }
 
 a {
@@ -159,6 +159,15 @@ footer {
 		text-align: left;
 		padding: .81967213%;
 	}
+
+	#nav-next{
+		background-position: right 200px;
+	}
+
+	#nav-prev{
+		background-position: left 200px;
+	}
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -168,6 +177,14 @@ footer {
 
 	.slideText {
 		background-size: 320px;
+	}
+
+	#nav-next{
+		background-position: right 250px;
+	}
+
+	#nav-prev{
+		background-position: left 250px;
 	}
 }
 
