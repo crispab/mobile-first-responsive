@@ -6,34 +6,34 @@
 			"img":"intro.png"
 		},
 		{
-			"title":"Why the Big Fuss About Mobile",
+			"title":"Mobile is Important",
 			"img":"cellphones-everywhere.png",
-			"text":"Fast growing market, lots of users. In developing countries the trend is that mobile usage is outpacing computer usage."
+			"text":"Fast growing market, look around you, and you see mobile users. In developing countries mobile usage outpaces computer usage."
 		},
 		{
-			"title":"Why is this important?",
+			"title":"Mobile Presence",
 			"img":"cool-website.png",
-			"text":"You lose out on your market without a mobile presence. Most people can access your site as it is on mobile. The experience should be good. So should you go native with an app, or just use a website."
+			"text":"Make sure you don't lose out on your market. Most people can access your site as it is on mobile. The experience should be good. So should you go native with an app, or just use a website."
 		},
 		{
 			"title":"Native or not",
 			"img":"native-never.png",
-			"text":"There are a lot of strong feelings around this question. When Java came we got a platform agnostic language: write once, run everywhere. Apps are introducing old restrictions to software. Write for a specific OS, tap into all the OS specific apis, do more with the app! These arguments run along very technical lines. What does the user need?"
+			"text":"There are a lot of strong feelings on the subject. When Java came we got a platform agnostic language: write once, run everywhere. Apps are introducing old restrictions to software. Write for a specific OS, tap into all the OS specific APIs, do more with the app! These arguments run along very technical lines. What does the user need?"
 		},
 		{
 			"title":"Sometimes Native is What You Need",
 			"img":"native.png",
-			"text":"What if you want to use the camera? Scan in labels, upload images? Integrating with the phone via an app gives you access to the phone's features. This is not possible today with a website."
+			"text":"What if you want to use the mobile device's camera? Scan in labels, upload images? Integrating with the mobile device via an app gives you access to the phone's features. Some of these interactions are not possible today with a website. Most likely a lot of them will become available."
 		},
 		{
 			"title":"Sometimes a Website is Better Suited",
 			"img":"newssite.png",
-			"text":"What about a blog? Or a news site? Or a site that doesn't need to interact with the OS? Do they really need an app? What about people who are browsing the web on their phones. What should they see when they come to your site?"
+			"text":"What about a blog? Or a news site? Or a site that doesn't need to interact with the OS? Do they really need an app? What should visitors see when they come to this type of site? Make sure that content is also available for mobile."
 		},
 		{
 			"title":"Yet Another Debate",
 			"img":"2sites-2designs.png",
-			"text":"So how should I display my website then? Should I have one website that both mobile and desktop users see, or should I have two disparate websites, tailored to their device?"
+			"text":"So how should I display my website then? Should I have one website that both mobile and desktop users see, or should I have two multiple websites, each tailored to a particular device?"
 		},
 		{
 			"title":"Jakob Nielsen",
@@ -41,14 +41,19 @@
 			"text":"Jakob Nielson is <em>the</em> authority on usable web design. He's written numerous books about web design, and was one of the first to advocate so strongly for user driven design. To oversimplify, Jakob Nielsen suggests that users on mobile devices just don't have the time or the attention span for a lot of data. So give them minimal features and minimal data."
 		},
 		{
-			"title":"Is this the Mobile Context?",
+			"title":"Mobile Context Implications",
+			"img":"mobile-context.png",
+			"text":"What does the mobile context imply: <ul><li>Airport site: I want to check the flight status, check in</li><li>Restaurant: I want to check the hours of operation and address</li></ul>"
+		},
+		{
+			"title":"Context Does Not Imply Intent",
 			"img":"on-the-move.png",
-			"text":"But is it true? Are we always rushing somewhere when we're using our mobile devices? Are we really only looking for a short, easily read, site?"
+			"text":"If we are always rushing somewhere when we're using our mobile devices, are we really only looking for a short, easily read, site? Could I be on the train trying to rebook my flight? Could I be in a car comparing menus at restaurants?"
 		},
 		{
 			"title":"Rethink Context",
 			"img":"couch-potato.png",
-			"text":""
+			"text":"Web usage shows that we are wrong about mobile context. Usage of mobile devices is not limited to when we are on the move. Mobile phones used in front of the TV. Tablets to read in bed. Usage of these devices peaks when we're at home in the evenings."
 		}
 	],
 	"linkTemplate":"<a id='<%=id%>' href='#' alt='<%=label%>'><span><%-label%></span></a>",
