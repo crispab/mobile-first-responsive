@@ -2,13 +2,14 @@
 
 (function() {
 
-	// "use strict";
+	"use strict";
 
 	require.config({
 		paths:{
 			'jquery':'lib/jquery',
 			'jquery-mobile':'lib/jquery.mobile.custom',
-			'jsrender':'lib/jsrender'
+			'jsrender':'lib/jsrender',
+			'text':'lib/text'
 		}
 	});
 

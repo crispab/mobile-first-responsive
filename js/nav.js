@@ -4,17 +4,17 @@
 
 	"use strict";
 
-	define(['index', 'jquery', 'jsrender', 'jquery-mobile'], function(Index, $) {
+	define(['index', 'jquery', 'text!../index.json', 'jsrender', 'jquery-mobile'], function(Index, $, indexDataStr) {
 
 		var contentSel = "#slide",
 			prevNavId = "nav-prev",
 			prevSel = "#" + prevNavId,
 			nextNavId = "nav-next",
 			nextSel = "#" + nextNavId,
+			indexData = $.parseJSON(indexDataStr),
 			indices = [],
 			currentIndex = 0,
 			navigate = function(index) {
-				console.log('indices: ' + indices);
 				currentIndex = Number(index);
 				indices[currentIndex].render(contentSel);
 			},
@@ -54,15 +54,13 @@
 				$(document).on('swiperight', prev);
 			},
 			loadNavMetaData = function(slide) {
-				$.getJSON('index.json', function(data) {
-					parseTemplates(data);
-					createIndex(data.slides);
-					createNavMarkup();
-					setUpNavigation();
-					if (slide) {
-						navigate(slide);
-					}
-				});
+				parseTemplates(indexData);
+				createIndex(indexData.slides);
+				createNavMarkup();
+				setUpNavigation();
+				if (slide) {
+					navigate(slide);
+				}
 			},
 			initialize = function(slide) {
 				loadNavMetaData(slide);
