@@ -73,6 +73,10 @@ a {
 	width: 30%;
 }
 
+#nav-prev:focus, #nav-next:focus {
+	outline: none;
+}
+
 #nav-prev:hover, #nav-next:hover {
 	background-size: 15%;
 	-moz-transition: background-size .2s ease-in;
