@@ -15,6 +15,7 @@
 				}
 			},
 
+			// Adapted from one of these suggestions https://gist.github.com/901295
 			fixViewport: function(doc) {
 				var addEvent = 'addEventListener',
 					type = 'gesturestart',

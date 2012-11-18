@@ -7,10 +7,10 @@
 	define(['index', 'jquery', 'jsrender', 'jquery-mobile'], function(Index, $) {
 
 		var contentSel = "#slide",
-			leftNavId = "nav-left",
-			leftSel = "#" + leftNavId,
-			rightNavId = "nav-right",
-			rightSel = "#" + rightNavId,
+			prevNavId = "nav-prev",
+			prevSel = "#" + prevNavId,
+			nextNavId = "nav-next",
+			nextSel = "#" + nextNavId,
 			indices = [],
 			currentIndex = 0,
 			navigate = function(index) {
@@ -28,8 +28,8 @@
 				$(contentSel).after(markup);
 			},
 			createNavMarkup = function() {
-				createNavLink(rightNavId, 'Next');
-				createNavLink(leftNavId, 'Previous');
+				createNavLink(nextNavId, 'Next');
+				createNavLink(prevNavId, 'Previous');
 			},
 			parseTemplates = function(data) {
 				$.templates({linkTemplate:data.linkTemplate, titleTemplate:data.titleTemplate, slideTemplate:data.slideTemplate});
@@ -41,22 +41,17 @@
 				return currentIndex > 0 ? currentIndex - 1 : indices.length - 1;
 			},
 			setUpNavigation = function() {
-				$(leftSel).on('click', function(e) {
+				var prev = function(e) {
 					e.preventDefault();
 					navigate(prevPage());
-				});
-				$(rightSel).on('click', function(e) {
+				}, next = function(e) {
 					e.preventDefault();
 					navigate(nextPage());
-				});
-				$(document).on('swipeleft', function(e) {
-					e.preventDefault();
-					navigate(nextPage());
-				});
-				$(document).on('swiperight', function(e) {
-					e.preventDefault();
-					navigate(prevPage());
-				});
+				};
+				$(prevSel).on('click', prev);
+				$(nextSel).on('click', next);
+				$(document).on('swipeleft', next);
+				$(document).on('swiperight', prev);
 			},
 			loadNavMetaData = function(slide) {
 				$.getJSON('index.json', function(data) {
