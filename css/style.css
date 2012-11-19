@@ -116,6 +116,10 @@ h2 {
 	font-size: 1em;
 }
 
+.slideImage {
+	text-align: center;
+}
+
 footer {
 	font-size: .8em;
 	text-align: center;
@@ -125,7 +129,6 @@ footer {
 	body {
 		background-size: 320px;
 	}
-
 }
 
 @media screen and (min-width: 769px) {
