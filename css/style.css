@@ -52,31 +52,31 @@ h1 {
 
 #nav-next {
 	background: url("../images/right-arrow.png") no-repeat right 40%;
-	background-size: 15%;
+	background-size: 45%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
 	position: absolute;
 	right: 0;
 	top: 0;
-	height: 90%;
+	height: 100%;
 }
 
 #nav-prev {
 	background: url("../images/left-arrow.png") no-repeat left 40%;
-	background-size: 15%;
+	background-size: 45%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 90%;
+	height: 100%;
 }
 
 .slideNav {
 	display: block;
-	width: 30%;
+	width: 10%;
 }
 
 #nav-prev:focus, #nav-next:focus {
@@ -84,7 +84,7 @@ h1 {
 }
 
 #nav-prev:hover, #nav-next:hover {
-	background-size: 20%;
+	background-size: 60%;
 	-moz-transition: background-size .2s ease-in;
 	-web-kit-transition: background-size .2s ease-in;
 	transition: background-size .2s ease-in;
