@@ -106,9 +106,104 @@
 			"text":"Even though people are not always in a rush when they're browsing their devices, they do not give their full attention. Improving your site by getting rid of fluff benefits desktop users as well."
 		},
 		{
-			"title":"Natural User Interfaces",
+			"title":"Use Mobile Devices As Mobile Devices",
 			"img":"nui.png",
 			"text":"Make use of touch features on mobile devices. Don't give the impression of touch responsiveness then forget to provide it. New gestures quickly become mainstream, make sure you're not breaking convention."
+		},
+		{
+			"title":"Mobile First in Summary",
+			"img":"mobile-first-summary.png",
+			"text":"If you need an app, create an app, for everything else consider a mobile first responsive design. Focus on delivering value, not fluff!"
+		},
+		{
+			"title":"What Does Responsive Mean?",
+			"img":"define-responsive.png",
+			"text":"Working with an unconstrained web design. Removing pixel limitations, and working with the entire display. One site that works everywhere."
+		},
+		{
+			"title":"Where to Start",
+			"img":"where-to-start.png",
+			"text":"Decide what you want to support. Platform and browser versions are the most important. Older systems will require more work-arounds. Don't put a lot of work into older platforms that are on their way out if your usage allows it."
+		},
+		{
+			"title":"Progressive Enhancement",
+			"img":"progressive-enhancement.png",
+			"text":"When designing mobile first, we start by designing for the mobile platforms, and add bells and whistles as the screen gets bigger, or the device has more capabilities."
+		},
+		{
+			"title":"Design for the Web",
+			"img":"design-for-the-web.png",
+			"text":"Ten years ago we were trying to make websites look identical across all browsers. New ideas about adaptive designs were starting to come to the forefront: semantic HTML, css style sheets."
+		},
+		{
+			"title":"Adaptive, Fluid and Flexible",
+			"img":"adaptive-fluid-flexible.png",
+			"text":"Today we want to take it even further. Think in relative terms, not absolute. Make sure that your design does not thing that the screen is ever too big or too small."
+		},
+		{
+			"title":"How",
+			"img":"how-adaptive.png",
+			"text":"Start out by thinking about what content you want to display on the page. Create your markup. Do not add HTML that is not semantic. Do use html5 elements where possible."
+		},
+		{
+			"title":"Start Styling For Mobile",
+			"img":"start-styling.png",
+			"text":"Add styles to a style sheet. Do not add it to your HTML. Style for the mobile phone."
+		},
+		{
+			"title":"But Which Mobile?",
+			"img":"which-mobile.png",
+			"text":"Keep your design fluid. Don't worry about which mobile it is right now. Start by thinking about a portrait mobile, what fits on the screen work with that."
+		},
+		{
+			"title":"Media Queries",
+			"img":"media-queries.png",
+			"text":"Once your site is working for a thin small layout you'll need to add media queries to change the css for larger browsers. Decide what the break points are for your design, and add a Media Query for the first one"
+		},
+		{
+			"title":"Wait... Do Media Queries Everywhere?",
+			"img":"media-queries-work.png",
+			"text":"Media queries do not work on all devices. This is no problem for non-smart phones, since our design is made for a phone. Our design will break though for IE7 and IE8."
+		},
+		{
+			"title":"Graceful Degradation",
+			"img":"graceful-degradation.png",
+			"text":"It turns out that it's not just media queries that don't work. But we can combine this with graceful degradation when it comes to the HTML and CSS specifications."
+		},
+		{
+			"title":"What About JavaScript",
+			"img":"javascript.png",
+			"text":"Not all mobile devices support JavaScript. How big is your market on those devices? Is it a market you want to pursue. Try unobtrusive JavaScript as a solution."
+		},
+		{
+			"title":"Putting it All Together",
+			"img":"all-together.png",
+			"text":"Keep adding media queries at your break points, and make sure that the site works. Add as little special handling opting for graceful degradation over specialized code"
+		},
+		{
+			"title":"Really Repetetive CSS",
+			"img":"repetetive-css.png",
+			"text":"The latest trend for managing large css files is to use precompilers such as Sass and LESS. You can reuse variables and colors and precompile and minify the css before deploying, saving you from code duplication."
+		},
+		{
+			"title":"What About Images?",
+			"img":"responsive-images.png",
+			"text":"At the least you'll need to make sure that the images resize, so they look good in the area that's available to them. Consider client-side solutions for loading the images at the appropriate size."
+		},
+		{
+			"title":"Server-Side Logic",
+			"img":"server-side.png",
+			"text":"There are consequences when caching content by url if the site delivers different content based on device. Make sure that users are getting the content you intend them to get."
+		},
+		{
+			"title":"Is It Really That Easy?",
+			"img":"really-easy.png",
+			"text":"It is. With very little effort we have a site that works on several platforms, devices, operating systems."
+		},
+		{
+			"title":"Give Responsive A Chance",
+			"img":"responsive-chance.png",
+			"text":"If you're considering designing a site, or updating an existing one, why not expend a bit more effort, and reach as many users and platforms as you can with your site?"
 		}
 	],
 	"linkTemplate":"<a id='<%=id%>' href='#' alt='<%=label%>'><span><%-label%></span></a>",
