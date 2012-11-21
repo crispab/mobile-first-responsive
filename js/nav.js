@@ -63,6 +63,9 @@
 					e.preventDefault();
 				});
 			},
+			configureSwipeThresholds = function() {
+				$.event.special.swipe.verticalDistanceThreshold = 30;
+			},
 			loadNavMetaData = function(slide) {
 				parseTemplates(indexData);
 				createIndex(indexData.slides);
@@ -71,6 +74,7 @@
 				if (slide) {
 					navigate(slide);
 				}
+				configureSwipeThresholds();
 			},
 			initialize = function(slide) {
 				loadNavMetaData(slide);
