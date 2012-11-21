@@ -116,7 +116,7 @@ h1 {
 	font-size: 1em;
 }
 
-#pageFooter {
+#pageFooter, #slideCount {
 	font-size: .8em;
 	text-align: center;
 }
@@ -157,11 +157,10 @@ h1 {
 		float: right;
 	}
 
-	h1, #pageFooter {
+	h1, #pageFooter, #slideCount {
 		text-align: left;
 		padding: .81967213%;
 	}
-
 }
 
 @media screen and (min-width: 1220px) {
