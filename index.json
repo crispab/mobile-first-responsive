@@ -153,12 +153,12 @@
 		{
 			"title":"But Which Mobile?",
 			"img":"which-mobile.png",
-			"text":"Keep your design fluid. Don't worry about which mobile it is right now. Start by thinking about a portrait mobile, what fits on the screen work with that."
+			"text":"Keep your design fluid. Don't worry about which mobile it is right now. Start by thinking about a mobile phones in portrait mode. A thin long page."
 		},
 		{
 			"title":"Media Queries",
 			"img":"media-queries.png",
-			"text":"Once your site is working for a thin small layout you'll need to add media queries to change the css for larger browsers. Decide what the break points are for your design, and add a Media Query for the first one"
+			"text":"Once your site is working for a thin long layout you'll need to add media queries to change the layout for larger browsers. Decide what the break points are for your design, and add a Media Query for the first one"
 		},
 		{
 			"title":"Wait... Do Media Queries Everywhere?",
@@ -208,5 +208,5 @@
 	],
 	"linkTemplate":"<a id='<%=id%>' class='slideNav' href='#' alt='<%=label%>'><span class='hiddenText'><%-label%></span></a>",
 	"titleTemplate":"<%-title%>",
-	"slideTemplate":"<section class='slideText'><h2><%-title%></h2><p><%=text%></p></section><figure class='slideImage'><img src='images/<%=img%>' alt='<%-title%>'/></figure>"
+	"slideTemplate":"<div class='slideText'><h2><%-title%></h2><p><%=text%></p></div><div class='slideImage'><img src='images/<%=img%>' alt='<%-title%>'/></div>"
 }
