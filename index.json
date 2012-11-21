@@ -138,7 +138,7 @@
 		{
 			"title":"Adaptive, Fluid and Flexible",
 			"img":"adaptive-fluid-flexible.png",
-			"text":"Today we want to take it even further. Think in relative terms, not absolute. Make sure that your design does not thing that the screen is ever too big or too small."
+			"text":"Today we want to take it even further. Think in relative terms, not absolute. Make sure that your design does not think that the screen is ever too big or too small."
 		},
 		{
 			"title":"How",
@@ -161,14 +161,9 @@
 			"text":"Once your site is working for a thin long layout you'll need to add media queries to change the layout for larger browsers. Decide what the break points are for your design, and add a Media Query for the first one"
 		},
 		{
-			"title":"Wait... Do Media Queries Everywhere?",
+			"title":"Wait, Do Media Queries Work Everywhere?",
 			"img":"media-queries-work.png",
-			"text":"Media queries do not work on all devices. This is no problem for non-smart phones, since our design is made for a phone. Our design will break though for IE7 and IE8."
-		},
-		{
-			"title":"Graceful Degradation",
-			"img":"graceful-degradation.png",
-			"text":"It turns out that it's not just media queries that don't work. But we can combine this with graceful degradation when it comes to the HTML and CSS specifications."
+			"text":"Media queries do not work on all devices. This is no problem for non-smart phones, since our base design handles phones. However, our design will break for IE7 and IE8. Fix it or live with it!"
 		},
 		{
 			"title":"What About JavaScript",
@@ -188,12 +183,7 @@
 		{
 			"title":"What About Images?",
 			"img":"responsive-images.png",
-			"text":"At the least you'll need to make sure that the images resize, so they look good in the area that's available to them. Consider client-side solutions for loading the images at the appropriate size."
-		},
-		{
-			"title":"Server-Side Logic",
-			"img":"server-side.png",
-			"text":"There are consequences when caching content by url if the site delivers different content based on device. Make sure that users are getting the content you intend them to get."
+			"text":"At the least you'll need to make sure that the images resize, so they look good in the area that's available to them. Consider solutions for loading the images at the appropriate size for the device."
 		},
 		{
 			"title":"Is It Really That Easy?",
@@ -204,6 +194,11 @@
 			"title":"Give Responsive A Chance",
 			"img":"responsive-chance.png",
 			"text":"If you're considering designing a site, or updating an existing one, why not expend a bit more effort, and reach as many users and platforms as you can with your site?"
+		},
+		{
+			"title":"References",
+			"img":"thank-you.png",
+			"text":"<span class='refLink'><strong>The Mobile Context</strong> <a href='http://mark-kirby.co.uk/2011/the-mobile-context/'>http://mark-kirby.co.uk/2011/the-mobile-context/</a></span> <span class='refLink'> <strong>Mobile vs Full Site</strong> <a href='http://www.useit.com/alertbox/mobile-vs-full-sites.html'> http://www.useit.com/alertbox/mobile-vs-full-sites.html</a></span> <span class='refLink'><strong>Mobile First</strong> <a href='http://www.abookapart.com/products/mobile-first'>http://www.abookapart.com/products/mobile-first</a> </span> <span class='refLink'><strong>Responsive Web Design</strong><a href='http://www.abookapart.com/products/responsive-web-design'>http://www.abookapart.com/products/responsive-web-design</a></span>"
 		}
 	],
 	"linkTemplate":"<a id='<%=id%>' class='slideNav' href='#' alt='<%=label%>'><span class='hiddenText'><%-label%></span></a>",

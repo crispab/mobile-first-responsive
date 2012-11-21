@@ -116,6 +116,14 @@ h1 {
 	font-size: 1em;
 }
 
+.refLink strong {
+	display: block;
+}
+
+.refLink a {
+	display: block;
+}
+
 #pageFooter {
 	font-size: .8em;
 	text-align: center;
