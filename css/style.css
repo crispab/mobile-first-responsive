@@ -36,39 +36,45 @@ img {
 body {
 	width: 100%;
 	margin: 0 auto;
-	font-family: arial, sans-serif;
+	font-family: verdana, arial, sans-serif;
 	background: url('../images/background.png') no-repeat center top;
 	background-size: 100%;
-	position: relative;
+}
+
+
+h1 {
+	letter-spacing: .2em;
+	font-size: .8em;
+	font-weight: lighter;
+	text-align: center;
+	padding: .81967213%;
 }
 
 #nav-next {
-	background: url("../images/right-arrow.png") no-repeat right 60px;
-	background-size: 10%;
+	background: url("../images/right-arrow.png") no-repeat right 40%;
+	background-size: 15%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
-	margin-top: -20px;
-	right: 0;
 	position: absolute;
+	right: 0;
 	top: 0;
-	height: 100%;
+	height: 90%;
 }
 
 #nav-prev {
-	background: url("../images/left-arrow.png") no-repeat left 60px;
-	background-size: 10%;
+	background: url("../images/left-arrow.png") no-repeat left 40%;
+	background-size: 15%;
 	-moz-transition: background-size .5s ease-in;
 	-web-kit-transition: background-size .5s ease-in;
 	transition: background-size .5s ease-in;
-	margin-top: -20px;
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
+	height: 90%;
 }
 
-a {
+.slideNav {
 	display: block;
 	width: 30%;
 }
@@ -78,13 +84,13 @@ a {
 }
 
 #nav-prev:hover, #nav-next:hover {
-	background-size: 15%;
+	background-size: 20%;
 	-moz-transition: background-size .2s ease-in;
 	-web-kit-transition: background-size .2s ease-in;
 	transition: background-size .2s ease-in;
 }
 
-span {
+.hiddenText {
 	display: none;
 }
 
@@ -92,13 +98,7 @@ span {
 	padding: 10px;
 }
 
-h1 {
-	font-size: .8em;
-	text-align: center;
-	padding: .81967213%;
-}
-
-h2 {
+.slideText h2 {
 	font-size: 1.5em;
 	text-align: center;
 }
@@ -120,7 +120,7 @@ h2 {
 	text-align: center;
 }
 
-footer {
+#pageFooter {
 	font-size: .8em;
 	text-align: center;
 }
@@ -161,36 +161,17 @@ footer {
 		float: right;
 	}
 
-	h1, footer {
+	h1, #pageFooter {
 		text-align: left;
 		padding: .81967213%;
 	}
 
-	#nav-next{
-		background-position: right 200px;
-	}
-
-	#nav-prev{
-		background-position: left 200px;
-	}
-
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1220px) {
 	body {
 		max-width: 1220px;
-	}
-
-	.slideText {
-		background-size: 320px;
-	}
-
-	#nav-next{
-		background-position: right 250px;
-	}
-
-	#nav-prev{
-		background-position: left 250px;
+		position: relative;
 	}
 }
 
