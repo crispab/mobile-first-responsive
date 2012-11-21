@@ -116,17 +116,21 @@ h1 {
 	font-size: 1em;
 }
 
-.refLink strong {
+.refLink {
 	display: block;
 }
 
-.refLink a {
-	display: block;
+.refLink a:focus {
+	outline: none;
 }
 
 #pageFooter, #slideCount {
 	font-size: .8em;
 	text-align: center;
+}
+
+#pageFooter a:focus {
+	outline: none;
 }
 
 @media screen and (min-width: 360px) {

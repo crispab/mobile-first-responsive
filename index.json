@@ -83,7 +83,7 @@
 		{
 			"title":"One Website",
 			"img":"one-website.png",
-			"text":"Why not just design one website that works on all devices? Enter responsive website design. It's an easy alternative to creating a site per device."
+			"text":"Why not just design one website that works on all devices? Enter responsive web design. It's an easy alternative to creating a site per device."
 		},
 		{
 			"title":"Impossible!",
@@ -198,7 +198,7 @@
 		{
 			"title":"References",
 			"img":"thank-you.png",
-			"text":"<span class='refLink'><strong>The Mobile Context</strong> <a href='http://mark-kirby.co.uk/2011/the-mobile-context/'>http://mark-kirby.co.uk/2011/the-mobile-context/</a></span> <span class='refLink'> <strong>Mobile vs Full Site</strong> <a href='http://www.useit.com/alertbox/mobile-vs-full-sites.html'> http://www.useit.com/alertbox/mobile-vs-full-sites.html</a></span> <span class='refLink'><strong>Mobile First</strong> <a href='http://www.abookapart.com/products/mobile-first'>http://www.abookapart.com/products/mobile-first</a> </span> <span class='refLink'><strong>Responsive Web Design</strong><a href='http://www.abookapart.com/products/responsive-web-design'>http://www.abookapart.com/products/responsive-web-design</a></span>"
+			"text":"<span class='refLink'><strong>The Mobile Context</strong> <a href='http://mark-kirby.co.uk/2011/the-mobile-context/' target='new'>Mark Kirby</a></span> <span class='refLink'> <strong>Mobile vs Full Site</strong> <a href='http://www.useit.com/alertbox/mobile-vs-full-sites.html' target='new'> Jakob Neilsen</a></span> <span class='refLink'><strong>Mobile First</strong> <a href='http://www.abookapart.com/products/mobile-first' target='new'>Luke Wroblewski</a> </span> <span class='refLink'><strong>Responsive Web Design</strong> <a href='http://www.abookapart.com/products/responsive-web-design' target='new'>Ethan Marcotte</a></span>"
 		}
 	],
 	"linkTemplate":"<a id='<%=id%>' class='slideNav' href='#' alt='<%=label%>'><span class='hiddenText'><%-label%></span></a>",
