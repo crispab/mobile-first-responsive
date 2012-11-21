@@ -5,18 +5,25 @@
 	"use strict";
 
 	define(['index', 'jquery', 'underscore', 'text!../index.json', 'jquery-mobile'], function(Index, $, _, indexDataStr) {
-		var contentSel = "#slide",
-			prevNavId = "nav-prev",
-			prevSel = "#" + prevNavId,
-			nextNavId = "nav-next",
-			nextSel = "#" + nextNavId,
+		var contentSel = '#slide',
+			prevNavId = 'nav-prev',
+			prevSel = '#' + prevNavId,
+			nextNavId = 'nav-next',
+			nextSel = '#' + nextNavId,
+			footerSel = '#pageFooter',
+			slideCountId = 'slideCount',
 			indexData = $.parseJSON(indexDataStr),
 			templates = {},
 			indices = [],
 			currentIndex = 0,
+			updateSlideCount = function(index) {
+				var markup = templates.slideCountTemplate({current:currentIndex + 1, total:indices.length});
+				$('#' + slideCountId).html(markup);
+			},
 			navigate = function(index) {
 				currentIndex = Number(index);
 				indices[currentIndex].render(contentSel);
+				updateSlideCount();
 			},
 			createIndex = function(slides) {
 				$.each(slides, function(key, val) {
@@ -31,10 +38,15 @@
 				createNavLink(nextNavId, 'Next');
 				createNavLink(prevNavId, 'Previous');
 			},
+			createSlideCountMarkup = function() {
+				$('<div>', {id:slideCountId}).insertBefore(footerSel);
+				updateSlideCount();
+			},
 			parseTemplates = function(data) {
 				templates.linkTemplate = _.template(data.linkTemplate);
 				templates.titleTemplate = _.template(data.titleTemplate);
 				templates.slideTemplate = _.template(data.slideTemplate);
+				templates.slideCountTemplate = _.template(data.slideCountTemplate);
 			},
 			nextPage = function() {
 				return currentIndex < indices.length - 1 ? currentIndex + 1 : 0;
@@ -63,14 +75,19 @@
 					e.preventDefault();
 				});
 			},
+			configureSwipeThresholds = function() {
+				$.event.special.swipe.verticalDistanceThreshold = 30;
+			},
 			loadNavMetaData = function(slide) {
 				parseTemplates(indexData);
 				createIndex(indexData.slides);
 				createNavMarkup();
+				createSlideCountMarkup();
 				setUpNavigation();
 				if (slide) {
 					navigate(slide);
 				}
+				configureSwipeThresholds();
 			},
 			initialize = function(slide) {
 				loadNavMetaData(slide);
