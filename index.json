@@ -208,5 +208,5 @@
 	],
 	"linkTemplate":"<a id='<%=id%>' class='slideNav' href='#' alt='<%=label%>'><span class='hiddenText'><%-label%></span></a>",
 	"titleTemplate":"<%-title%>",
-	"slideTemplate":"<div class='slideText'><h2><%-title%></h2><p><%=text%></p></div><div class='slideImage'><img src='images/<%=img%>' alt='<%-title%>'/></div>"
+	"slideTemplate":"<section class='slideText'><h2><%-title%></h2><p><%=text%></p></section><figure class='slideImage'><img src='images/<%=img%>' alt='<%-title%>'/></figure>"
 }
