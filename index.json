@@ -8,17 +8,17 @@
 		{
 			"title":"Mobile is Important",
 			"img":"cellphones-everywhere.jpg",
-			"text":"Fast growing market, look around you, and you see mobile users. In developing countries mobile usage outpaces computer usage."
+			"text":"This is a fast growing market. Look around you, and you see mobile users everywhere. In developing countries mobile usage outpaces desktop computer usage."
 		},
 		{
 			"title":"Mobile Presence",
 			"img":"cool-website.jpg",
-			"text":"Make sure you don't lose out on your market. Most people can access your site as it is on mobile. The experience should be good. So should you go native with an app, or just use a website."
+			"text":"Make sure you don't lose out on your market. Most people can access your site as it is on mobile. The experience should be good."
 		},
 		{
 			"title":"Native or not",
 			"img":"native-never.jpg",
-			"text":"There are a lot of strong feelings on the subject. When Java came we got a platform agnostic language: write once, run everywhere. Apps are introducing old restrictions to software. Write for a specific OS, tap into all the OS specific APIs, do more with the app! These arguments run along very technical lines. What does the user need?"
+			"text":"When Java came we got a platform agnostic language: write once, run everywhere. Apps are introducing old restrictions to software. Write for a specific OS, tap into all the OS specific APIs, do more with the app! These arguments run along very technical lines. What does the user need?"
 		},
 		{
 			"title":"Sometimes Native is What You Need",
@@ -28,22 +28,22 @@
 		{
 			"title":"Sometimes a Website is Better Suited",
 			"img":"newssite.jpg",
-			"text":"What about a blog? Or a news site? Or a site that doesn't need to interact with the OS? Do they really need an app? What should visitors see when they come to this type of site? What about your company site?"
+			"text":"What about a blog? Or a news site? Or a company site? Do they really need an app? What should visitors on mobile devices see."
 		},
 		{
 			"title":"Yet Another Debate",
 			"img":"2sites-2designs.jpg",
-			"text":"So how should I display my website then? Should I have one website that both mobile and desktop users see, or should I have two multiple websites, each tailored to a particular device?"
+			"text":"Should we have one website that both mobile and desktop users see, or should we have two multiple websites, each tailored to a particular device?"
 		},
 		{
 			"title":"Jakob Nielsen",
 			"img":"jakob-nielsen.jpg",
-			"text":"Jakob Nielson is <em>the</em> authority on usable web design. He's written numerous books about web design, and was one of the first to advocate so strongly for user driven design. To oversimplify, Jakob Nielsen suggests that users on mobile devices just don't have the time or the attention span for a lot of data. So give them minimal features and minimal data."
+			"text":"Jakob Nielson is <em>the</em> authority on usable web design. He's written numerous books, and was one of the first to advocate so strongly for user driven design based on user feedback. To oversimplify, Jakob Nielsen suggests that users on mobile devices just don't have the time or the attention span for a lot of data. So give them their own site with minimal features and minimal content."
 		},
 		{
 			"title":"Mobile Context Implications",
 			"img":"mobile-context.jpg",
-			"text":"What does the mobile context imply. <strong>Airline</strong>: I want to check the flight status, check in. <strong>Restaurant</strong>: I want to check the hours of operation and address</li></ul>"
+			"text":"What does the mobile context imply. <strong>For an airline</strong>: users want to check the flight status, check in. <strong>For a restaurant</strong>: visitor want to check the hours of operation and address.</li></ul>"
 		},
 		{
 			"title":"Context Does Not Imply Intent",
@@ -53,7 +53,7 @@
 		{
 			"title":"Rethink Context",
 			"img":"couch-potato.jpg",
-			"text":"Traffic studies shows that we are wrong about mobile context. Usage of mobile devices is not limited to when we are on the move. Mobile phones are used in front of the TV. Tablets are used to read in bed. Usage of these devices peaks when we're at home in the evenings."
+			"text":"Web traffic data suggests that usage of mobile devices is not limited to when we are on the move. Mobile phones are used in front of the TV. Tablets are used to read in bed. Usage of these devices peaks when we're at home in the evenings."
 		},
 		{
 			"title":"Content is Available",
@@ -68,7 +68,7 @@
 		{
 			"title":"An App For Each Device",
 			"img":"an-app-per-device.jpg",
-			"text":"Keep in mind that there are a lot of devices, and they run on different platforms. Do you have the resources to create an app for each: Iphone, Android, Windows Phone, Blackberry..."
+			"text":"Keep in mind that there are a lot of devices, and they run on different platforms. Do you have the resources to create an app for each: Iphone, Android, Windows Phone, Blackberry, etc."
 		},
 		{
 			"title":"Mobile Web",
@@ -78,22 +78,22 @@
 		{
 			"title":"Don't Break the Web",
 			"img":"mobile-broken.jpg",
-			"text":"People love to share. Links to Instagram, blog entries, YouTube videos, links to your content. Make sure that it's available for mobile."
+			"text":"People love to share. Links to Instagram, blog entries, YouTube videos, links to your content. Make sure that your content is available for mobile users as well."
 		},
 		{
 			"title":"One Website",
 			"img":"one-website.jpg",
-			"text":"Why not just design one website that works on all devices? Enter responsive web design. It's an easy alternative to creating a site per device."
+			"text":"Why not just design one website that works on all devices?"
 		},
 		{
 			"title":"Impossible!",
 			"img":"impossible-to-support.jpg",
-			"text":"We have so much content, how do we fit it all in? We offer so many services, they're <em>all</em> important"
+			"text":"We have so much content, how do we fit it all in? We offer so many services, they're <em>all</em> important!"
 		},
 		{
 			"title":"Mobile First",
 			"img":"mobile-first.jpg",
-			"text":"Mobile first forces focus. What is the most important feature that fits on our mobile device screen? Implement that first"
+			"text":"Mobile first forces focus. What is the most important feature that fits on a mobile device screen? Implement that first."
 		},
 		{
 			"title":"Focus on Content",
@@ -103,17 +103,17 @@
 		{
 			"title":"Pay Attention",
 			"img":"pay-attention.jpg",
-			"text":"Even though people are not always in a rush when they're browsing their devices, they do not give their full attention. Improving your site by getting rid of fluff benefits desktop users as well."
+			"text":"Even though people are not always in a rush when they're browsing their devices, they don't give their full attention. Improving your site by getting rid of fluff benefits desktop users as well."
 		},
 		{
 			"title":"Use Mobile Devices As Mobile Devices",
 			"img":"nui.jpg",
-			"text":"Make use of touch features on mobile devices. Don't give the impression of touch responsiveness then forget to provide it. New gestures quickly become mainstream, make sure you're not breaking convention."
+			"text":"Touch features on mobile devices open a world of possibility. New gestures quickly become mainstream, make sure to follow convention."
 		},
 		{
 			"title":"Mobile First in Summary",
 			"img":"mobile-first-summary.jpg",
-			"text":"If you need an app, create an app, for everything else consider a mobile first responsive design. Focus on delivering value, not fluff!"
+			"text":"If you need an app, create an app, for everything else consider a mobile first website that works on all platforms. Focus on delivering value, not fluff!"
 		},
 		{
 			"title":"What Does Responsive Mean?",
@@ -123,12 +123,12 @@
 		{
 			"title":"Where to Start",
 			"img":"where-to-start.jpg",
-			"text":"Decide what you want to support. Platform and browser versions are the most important. Older systems will require more work-arounds. Don't put a lot of work into older platforms that are on their way out if your usage allows it."
+			"text":"Decide what you want to support. Platform and browser versions are the most important. Older platforms will require more work-arounds. Don't put a lot of work into platforms that are on their way out if your usage allows it."
 		},
 		{
 			"title":"Progressive Enhancement",
 			"img":"progressive-enhancement.jpg",
-			"text":"When designing mobile first, we start by designing for the mobile platforms, and add bells and whistles as the screen gets bigger, or the device has more capabilities."
+			"text":"When designing mobile first, we start by designing for the mobile platforms, and add content and features as the screen gets bigger, or the device gains capabilities."
 		},
 		{
 			"title":"Design for the Web",
@@ -138,27 +138,27 @@
 		{
 			"title":"Adaptive, Fluid and Flexible",
 			"img":"adaptive-fluid-flexible.jpg",
-			"text":"Today we want to take it even further. Think in relative terms, not absolute. Make sure that your design does not think that the screen is ever too big or too small."
+			"text":"Today we want to take it even further. Think in relative terms, not absolute. Make sure that the design does not break because of screen size."
 		},
 		{
 			"title":"How",
 			"img":"how-adaptive.jpg",
-			"text":"Start out by thinking about what content you want to display on the page. Create your markup. Do not add HTML that is not semantic. Do use html5 elements where possible."
+			"text":"Start by thinking about what content you want to display on the page. Create your markup. Make sure to use semantic HTML. Use HTML5 elements where possible."
 		},
 		{
 			"title":"Start Styling For Mobile",
 			"img":"start-styling.jpg",
-			"text":"Add styles to a style sheet. Do not add it to your HTML. Style for the mobile phone."
+			"text":"Add styles to a style sheet. The HTML should only contain content. Style for the mobile phone."
 		},
 		{
 			"title":"But Which Mobile?",
 			"img":"which-mobile.jpg",
-			"text":"Keep your design fluid. Don't worry about which mobile it is right now. Start by thinking about a mobile phones in portrait mode. A thin long page."
+			"text":"Keep your design fluid. Don't worry about which mobile it is right now. Start by thinking about a mobile phones in portrait mode. A thin long layout."
 		},
 		{
 			"title":"Media Queries",
 			"img":"media-queries.jpg",
-			"text":"Once your site is working for a thin long layout you'll need to add media queries to change the layout for larger browsers. Decide what the break points are for your design, and add a Media Query for the first one"
+			"text":"Once your site is working for a thin long layout you'll need to add media queries to change the layout for larger browsers. Decide what the break points are for your design, and add a media query for the first one."
 		},
 		{
 			"title":"Wait, Do Media Queries Work Everywhere?",
@@ -168,17 +168,7 @@
 		{
 			"title":"What About JavaScript",
 			"img":"javascript.jpg",
-			"text":"Not all mobile devices support JavaScript. How big is your market on those devices? Is it a market you want to pursue. Try unobtrusive JavaScript as a solution."
-		},
-		{
-			"title":"Putting it All Together",
-			"img":"all-together.jpg",
-			"text":"Keep adding media queries at your break points, and make sure that the site works. Add as little special handling opting for graceful degradation over specialized code"
-		},
-		{
-			"title":"Really Repetetive CSS",
-			"img":"repetetive-css.jpg",
-			"text":"The latest trend for managing large css files is to use precompilers such as Sass and LESS. You can reuse variables and colors and precompile and minify the css before deploying, saving you from code duplication."
+			"text":"Not all mobile devices support JavaScript. How big is your market on those devices? Is it a market you want to pursue. If you are using JavaScript work with unobtrusive JavaScript as a solution."
 		},
 		{
 			"title":"What About Images?",
@@ -186,19 +176,29 @@
 			"text":"At the least you'll need to make sure that the images resize, so they look good in the area that's available to them. Consider solutions for loading the images at the appropriate size for the device."
 		},
 		{
+			"title":"Putting it All Together",
+			"img":"all-together.jpg",
+			"text":"Keep adding media queries for your break points, and make sure that the site works. Add as little special handling as possible. Opting for graceful degradation over specialized code."
+		},
+		{
+			"title":"Managing CSS",
+			"img":"repetetive-css.jpg",
+			"text":"The latest trend for managing large CSS files is to use precompilers such as Sass and LESS. You can reuse variables and colors and precompile and minify the CSS before deploying. The result is manageable, maintainable CSS."
+		},
+		{
 			"title":"Is It Really That Easy?",
 			"img":"really-easy.jpg",
-			"text":"It is. With very little effort we have a site that works on several platforms, devices, operating systems."
+			"text":"It is! With very little effort we have a site that works on several platforms, devices and operating systems."
 		},
 		{
 			"title":"Give Responsive A Chance",
 			"img":"responsive-chance.jpg",
-			"text":"If you're considering designing a site, or updating an existing one, why not expend a bit more effort, and reach as many users and platforms as you can with your site?"
+			"text":"If you're considering designing a new site, or updating an existing one, why not expend just a bit more effort, and reach as many users and platforms as you can with one site?"
 		},
 		{
 			"title":"References",
 			"img":"thank-you.jpg",
-			"text":"<span class='refLink'><strong>The Mobile Context</strong> <a href='http://mark-kirby.co.uk/2011/the-mobile-context/' target='new'>Mark Kirby</a></span> <span class='refLink'> <strong>Mobile vs Full Site</strong> <a href='http://www.useit.com/alertbox/mobile-vs-full-sites.html' target='new'> Jakob Neilsen</a></span> <span class='refLink'><strong>Mobile First</strong> <a href='http://www.abookapart.com/products/mobile-first' target='new'>Luke Wroblewski</a> </span> <span class='refLink'><strong>Responsive Web Design</strong> <a href='http://www.abookapart.com/products/responsive-web-design' target='new'>Ethan Marcotte</a></span>"
+			"text":"<span class='refLink'><strong>Mark Kirby</strong> <a href='http://mark-kirby.co.uk/2011/the-mobile-context/' target='new'>The Mobile Context</a></span> <span class='refLink'> <strong>Jakob Neilsen</strong> <a href='http://www.useit.com/alertbox/mobile-vs-full-sites.html' target='new'>Mobile vs Full Site</a></span> <span class='refLink'><strong>Luke Wroblewski</strong> <a href='http://www.abookapart.com/products/mobile-first' target='new'>Mobile First</a> </span> <span class='refLink'><strong>Ethan Marcotte</strong> <a href='http://www.abookapart.com/products/responsive-web-design' target='new'>Responsive Web Design</a></span> <span class='refLink'><strong>HTML Support</strong> <a href='http://html5doctor.com' target='new'>HTML5 Doctor</a></span> <span class='refLink'><strong>Presentation Source Code</strong> <a href='https://github.com/crispab/mobile-first-responsive' target='new'>Github</a></span>"
 		}
 	],
 	"linkTemplate":"<a id='<%=id%>' class='slideNav' href='#' alt='<%=label%>'><span class='hiddenText'><%-label%></span></a>",

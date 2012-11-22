@@ -169,9 +169,14 @@ h1 {
 		float: right;
 	}
 
-	h1, #pageFooter, #slideCount {
+	h1 {
 		text-align: left;
 		padding: .81967213%;
+	}
+
+	#pageFooter, #slideCount {
+		text-align: left;
+		padding: 0 .81967213%;
 	}
 }
 
